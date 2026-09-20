@@ -1,0 +1,64 @@
+#page-container {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 1.85em;
+    font-weight: 550;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #006EB6;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1.5px;
+}
+
+hr {
+    margin: 0;
+    color: lightgray;
+    margin-bottom: 30px;
+}
+
+header {
+    text-align: center;
+}
+
+#width-control {
+    width: 80%;
+    margin: 0 auto;
+}
+
+ol {
+    padding-left: 35px;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+}
+
+li {
+    line-height: 1.5em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+img {
+    height: 25%;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
