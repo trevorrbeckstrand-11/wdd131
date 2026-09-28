@@ -1,0 +1,34 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin: 15px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CSS should be geared toward mobile phone format first */
+/* media queries should then apply for desktop */
+/* within a media query, the styles changed will change and the styles left unchanged will still apply. */
+
+@media screen and (min-width: 700px) {
+    body {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    div {
+        height: 300px;
+        width: 300px;
+        background-color: darkslategray;
+    }
+}
