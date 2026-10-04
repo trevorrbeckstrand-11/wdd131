@@ -32,7 +32,7 @@ nav a:hover {
     color: #616061;
 }
 .menu-btn {
-    cursor: pointer;
+    cursor: pointer; 
     border: none;
     background-color: transparent;
 }
