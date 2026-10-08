@@ -5,5 +5,10 @@ let header = document.querySelector("header");
 menuButton.addEventListener("click", function (e) {
     header.classList.toggle("change");
     nav.classList.toggle("change");
-})
+});
 
+// function greet(name) {
+//     console.log(`Hello ${name}`);
+// }
+
+// header.addEventListener("click", () => console.log("Hello"));
