@@ -24,8 +24,21 @@ header, main, footer {
     margin: 5px 0;
 }
 
-nav a {
+nav {
+    padding-top: 15px;
+    font-size: 1.2em;
+    gap: 15px;
     display: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.unhide {
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -57,7 +70,88 @@ footer {
     text-align: center;
 }
 
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+
+dialog img {
+    /* position: fixed;
+    top: 25%;
+    left: 10%;
+    border: none; */
+    object-fit: cover;
+    max-width: 80vw;
+    max-height: 80vw;
+    height: auto;
+    width: auto;
+    border: none;
+    margin-top: 10vh;
+}
+
+#x-button {
+    position: fixed;
+    /* top: 20%;
+    right: 5%;
+    padding: 3px 6px; */
+    margin-top: 5vh;
+    margin-left: 80vw;
+    font-size: 1.5em;
+    position: fixed;
+}
+
 @media (min-width: 500px) {
+
+    /* nav a {
+        display: inline;
+        padding-top: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding-top: 0;
+    }
+
+    .unhide {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding-top: 0;
+    } */
+
+    #img-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    dialog img {
+        max-width: 80vw;
+        max-height: 80vh;
+        width: auto;
+        height: auto;
+    }
+    
+}
+
+@media (min-width: 1000px) {
+
+    header, main, footer {
+        max-width: none;
+    }
+
+    main {
+        display: gird;
+        grid-template-columns: 1fr 1fr;
+    }
 
     nav a {
         display: inline;
@@ -72,23 +166,15 @@ footer {
 
     nav {
         display: flex;
+        flex-direction: row;
         gap: 15px;
+        padding-top: 0;
     }
 
-    #img-wrap {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 1000px) {
-
-    header, main, footer {
-        max-width: none;
-    }
-
-    main {
-        display: gird;
-        grid-template-columns: 1fr 1fr;
+    .unhide {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding-top: 0;
     }
 }
