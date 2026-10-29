@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <script src="event.js" defer></script>
+    <link rel="icon" href="favicon-32x32.png">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <h1>Event Ticket</h1>
+        <form>
+            <div id="firstNameContainer" class="container">
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" name="firstName" required>
+            </div>
+            <div id="lastNameContainer" class="container">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" name="lastName" required>
+            </div>
+            <div id="emailContainer" class="container">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+            </div>
+            <div id="typeContainer" class="container">
+                <label for="type">Type</label>
+                <select id="type" name="type" required>
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="Guest">Guest</option>
+                </select>
+            </div>
+            <div id="eventDateContainer" class="container">
+                <label for="eventDate">Event Date</label>
+                <input id="eventDate" type="date" name="date" required>
+            </div>
+
+            <div id="studentNumberContainer" class="container" hidden>
+                <label for="studentNumber">Student I#</label>
+                <input id="studentNumber" type="text" name="studentNumber">
+            </div>
+
+            <div id="accessCodeContainer" class="container" hidden>
+                <label for="accessCode">Access Code</label>
+                <input id="accessCode" type="text" name="accessCode">
+            </div>
+
+            <button type="submit">Create Ticket</button>
+
+        </form>
+
+        <section id="output" aria-live="polite"></section>
+    </main>
+
+
+</body>
+</html>
