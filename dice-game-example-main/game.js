@@ -20,7 +20,9 @@ button.addEventListener("click", event => {
                 let number = Math.random()
                 let randomNumber = Math.floor((number * 6) + 1)
                 console.log(randomNumber)
-                image.src = `assets/white_dice_${randomNumber}.gif`;
+                if (isDieUnlocked(image)) {
+                    image.src = `assets/white_dice_${randomNumber}.gif`;
+                };
             });
 
         }, 500);
@@ -28,8 +30,8 @@ button.addEventListener("click", event => {
 
 function isDieUnlocked(dieImage) {
     // Is the corresponding checkbox checked? Return false or true
-    const checkboxes = document.querySelectorAll('#gamboard input');
+    const checkboxes = document.querySelectorAll('#gameboard input');
     // return a new array of just the checked ones
     const unchecked = Array.from(checkboxes).filter(checkboxes => !checkboxes.checked);
-    return unchecked.find(uncheck => unchecked.className == dieImage.className)
-}
+    return unchecked.find(uncheck => uncheck.className == dieImage.className)
+};
