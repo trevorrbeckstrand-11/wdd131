@@ -68,11 +68,13 @@ hr {
     gap: 5px;
 }
 
-.recipe-card button {
-    max-width: 25%;
-    font-size: 1.25em;
+.buttons {
+    display: flex;
 }
 
+.recipe-card button {
+    font-size: 1.25em;
+}
 
 .title-rating {
     margin-top: 20px;
